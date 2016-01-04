@@ -11,6 +11,17 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gmock", "gmock-1.7.0\msvc\2
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gmock_main", "gmock-1.7.0\msvc\2013\gmock_main.vcxproj", "{E4EF614B-30DF-4954-8C53-580A0BF6B589}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution Files", "{7D783C96-1816-467F-9DC5-2399CF4C96AA}"
+	ProjectSection(SolutionItems) = preProject
+		BuildAll.bat = BuildAll.bat
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildServer", "BuildServer", "{874230D0-D540-4864-96C3-D312B0907198}"
+	ProjectSection(SolutionItems) = preProject
+		BuildServer\CoverageToTeamCity.xslt = BuildServer\CoverageToTeamCity.xslt
+		BuildServer\ProgramPaths.bat = BuildServer\ProgramPaths.bat
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -36,5 +47,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{874230D0-D540-4864-96C3-D312B0907198} = {7D783C96-1816-467F-9DC5-2399CF4C96AA}
 	EndGlobalSection
 EndGlobal

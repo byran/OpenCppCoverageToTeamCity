@@ -4,3 +4,9 @@
 *.user
 Debug/
 Release/
+/Coverage.bin
+/Coverage.txt
+/Coverage.xml
+/CoverageReport.zip
+/LastCoverageResults.log
+/CoverageReport
