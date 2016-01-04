@@ -2,7 +2,7 @@
 
 std::string hello_or_world(bool state)
 {
-	if (state)
+	if(state)
 	{
 		return "Hello";
 	}
