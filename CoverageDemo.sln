@@ -13,7 +13,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gmock_main", "gmock-1.7.0\m
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution Files", "{7D783C96-1816-467F-9DC5-2399CF4C96AA}"
 	ProjectSection(SolutionItems) = preProject
+		.clang-format = .clang-format
+		.gitignore = .gitignore
 		BuildAll.bat = BuildAll.bat
+		format_all.sh = format_all.sh
+		License.txt = License.txt
+		Readme.md = Readme.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildServer", "BuildServer", "{874230D0-D540-4864-96C3-D312B0907198}"

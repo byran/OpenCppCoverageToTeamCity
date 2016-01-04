@@ -46,7 +46,7 @@ Cpp11BracedListStyle: false
 Standard:        Auto
 IndentWidth:     2
 TabWidth:        2
-UseTab:          ForIndentation 
+UseTab:          ForIndentation
 BreakBeforeBraces: Allman
 SpacesInParentheses: false
 SpacesInSquareBrackets: false
