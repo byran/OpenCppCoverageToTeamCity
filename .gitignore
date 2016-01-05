@@ -10,3 +10,5 @@ Release/
 /CoverageReport.zip
 /LastCoverageResults.log
 /CoverageReport
+/tests.xml
+

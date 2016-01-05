@@ -24,10 +24,12 @@ del Coverage.xml
 rmdir /s /q CoverageReport
 del CoverageReport.zip
 
-opencppcoverage --sources %SOURCES% --export_type=binary:Coverage.bin -- %APP%
+opencppcoverage --sources %SOURCES% --export_type=binary:Coverage.bin -- %APP% --gtest_output=xml:tests.xml
 REM This may have a %ERRORLEVEL% other than 0 due to failed tests, this can be
 REM ignored as the build will fail on failed tests but we still want to generate
 REM the report files
+
+echo ##teamcity[importData type='gtest' path='tests.xml']
 
 echo ##teamcity[progressMessage 'Generating Coverage Reports']
 
@@ -45,6 +47,8 @@ if %ERRORLEVEL% NEQ 0 goto exit_batch
 
 %SEVENZIP% a "%~dp0CoverageReport.zip" "%~dp0CoverageReport"
 if %ERRORLEVEL% NEQ 0 goto exit_batch
+
+echo ##teamcity[publishArtifacts '%~dp0CoverageReport.zip']
 
 REM ===================================================
 
