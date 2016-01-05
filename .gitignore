@@ -11,4 +11,6 @@ Release/
 /LastCoverageResults.log
 /CoverageReport
 /tests.xml
+/BuildServer/Metrics.xml
+/BuildServer/Metrics.txt
 

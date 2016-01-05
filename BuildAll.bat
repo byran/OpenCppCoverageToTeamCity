@@ -52,5 +52,14 @@ echo ##teamcity[publishArtifacts '%~dp0CoverageReport.zip']
 
 REM ===================================================
 
+echo ##teamcity[progressMessage 'Calculating Code Metrics']
+
+cd "%~dp0BuildServer"
+%SOURCEMONITOR% /s AddCheckpointAndExportMetrics.xml
+
+xslconvert "Metrics.xml" MetricsToTeamCity.xslt Metrics.txt
+
+type Metrics.txt
+
 :exit_batch
 exit /b %ERRORLEVEL%
