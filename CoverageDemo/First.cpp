@@ -6,8 +6,5 @@ std::string hello_or_world(bool state)
 	{
 		return "Hello";
 	}
-	else
-	{
-		return "World";
-	}
+	return "World";
 }
